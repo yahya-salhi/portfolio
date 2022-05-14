@@ -1,0 +1,28 @@
+:root {
+  --color-primary: hsl(227, 26%, 13%);
+  --color-secondary: hsl(145, 63%, 42%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-grey0: hsl(0, 0%, 97%);
+  --color-grey-1: hsl(212, 22%, 88%);
+  --color-grey-2: hsl(213, 21%, 75%);
+  --color-grey-3: hsl(206, 10%, 47%);
+  --color-grey-4: hsl(208, 11%, 30%);
+  --color-grey-5: hsl(218, 12%, 19%);
+  --color-grey-6: hsl(200, 20%, 9%);
+  --br-sm-2: u.rem(14);
+  --box-shadow-1: 0 3px 15px hsla(0, 0%, 0%, 0.302);
+}
+.light-mode {
+  --color-primary: #FFFFFF;
+  --color-secondary: #F56692;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f8f8f8;
+  --color-grey-6: #12181b;
+}

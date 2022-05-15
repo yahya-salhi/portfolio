@@ -18,8 +18,10 @@ h6,p{
 h1{
   font-size: clamp(u.rem(28), u.rem(16) + 2vw, u.rem(40));
   span { color: var(--color-secondary); }
+  text-transform: uppercase;
 }
 p {
   margin: 2rem 0;
   line-height: 2rem;
+ 
 }

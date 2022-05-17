@@ -1,6 +1,4 @@
-@forward 'globals';
-@forward 'layout';
-@use './util/'as u;
+@use '../util/'as u;
 
 header{
   min-height: 100vh;

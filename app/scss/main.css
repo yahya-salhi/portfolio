@@ -6,27 +6,18 @@
 /* Reset               */
 /* ------------------- */
 /* https://piccalil.li/blog/a-modern-css-reset/ */
+html {
+  box-sizing: border-box;
+}
+
 /* Box sizing */
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
   list-style: none;
-}
-
-/* Reset margins */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-figure,
-picture {
-  margin: 0;
 }
 
 /* make images easier to work with */
@@ -44,19 +35,6 @@ select {
   font: inherit;
 }
 
-/* remove animations for people who've turned them off */
-@media (prefers-reduced-motion: reduce) {
-  *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 body {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -173,10 +151,24 @@ p {
   transition: all 0.4s ease-in-out;
 }
 
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-height: 100vh;
+  gap: 40px;
 }
 .header-content .left-header {
   display: flex;
@@ -209,13 +201,10 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: all 0.4s ease-in-out;
-  filter: grayscale(100%);
-}
-.header-content .left-header .image img:hover {
   filter: grayscale(0);
 }
-.header-content .right-header {
+
+.right-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -325,4 +314,4 @@ section {
   font-size: 1.4rem;
   color: var(--color-grey-2);
   pointer-events: none;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

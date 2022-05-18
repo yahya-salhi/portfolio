@@ -16,13 +16,22 @@ h6,p{
     font-weight: 400;
 }
 h1{
-  font-size: clamp(u.rem(28), u.rem(16) + 2vw, u.rem(40));
-  span { color: var(--color-secondary); }
-  text-transform: uppercase;
+  font-size: clamp(u.rem(18), u.rem(16) + 2vw, u.rem(30));
+  span { 
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    animation: blinker 1s linear infinite;
+    @keyframes blinker {
+      50%{
+        opacity: 0;
+      }
+      
+    }
+   }
+  
 }
 p {
   margin: 2rem 0;
-  line-height: 2rem;
  
 }
 

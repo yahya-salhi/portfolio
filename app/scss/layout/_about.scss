@@ -4,10 +4,19 @@
   grid-template-columns: repeat(2, 1fr);
   padding-top: u.rem(56);
   padding-bottom: u.rem(80);
+  @include u.breakpoint-down(small){
+    grid-template-columns: repeat(1,1fr);
+ 
+  }
   .right-about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(2, 1fr);
+
     gap: u.rem(32);
+    @include u.breakpoint-down(small){
+      grid-template-columns:  repeat(1, 1fr);
+      padding-top: 2.5rem;
+    }
     .about-item {
       border: 1px solid var(--color-grey-5);
       border-radius: 5px;
@@ -18,6 +27,10 @@
         transform: translateY(-5px);
         border: 1px solid var(--color-secondary);
         box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
+      }
+      @include u.breakpoint-down(small){
+        width: min(100% - u.rem(40), u.rem(700));
+      
       }
     }
     .abt-text {
@@ -48,6 +61,7 @@
         }
       }
     }
+  
   }
   .left-about {
     padding-right: u.rem(80);
@@ -55,19 +69,29 @@
       line-height: u.rem(32);
       padding: u.rem(16);
       color: var(--color-grey-1);
+      font-size: u.rem(16);
+    
     }
     h4 {
-      font-size: u.rem(32);
+      font-size: clamp(u.rem(22), u.rem(14) + 1.5vw, u.rem(36));
       text-transform: uppercase;
+      padding-left: u.rem(20);
     }
+   
   }
 }
 .about-stats {
   padding-bottom: u.rem(64);
+ 
   .progress-bars {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: u.rem(32);
+    @include u.breakpoint-down(small){
+      grid-template-columns: repeat(1, 1fr);
+      width: min(100% - u.rem(40), u.rem(700));
+     
+    }
     .progress-bar {
       display: flex;
       flex-direction: column;
@@ -124,6 +148,10 @@
   grid-template-columns: repeat(2,1fr);
   gap: u.rem(32);
   padding-bottom: u.rem(48);
+  @include u.breakpoint-down(small){
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
   .timeline-item{
     position: relative;
     padding-left: u.rem(48);

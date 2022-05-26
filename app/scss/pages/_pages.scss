@@ -52,8 +52,15 @@ section{
     transform: translateY(-50%);
     width: fit-content;
     background-color: inherit;
- 
-
+    }
+    @include u.between(medium){
+      top: 50%;
+      left: 90%;
+      flex-direction: column;
+      align-items: center;
+      transform: translateY(-50%);
+      width: fit-content;
+      background-color: inherit;
     }
   
   .control{

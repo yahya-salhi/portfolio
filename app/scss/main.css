@@ -288,7 +288,7 @@ header {
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
   height: 90%;
-  width: 68%;
+  width: 90%;
   background-color: var(--color-black);
   margin-inline: auto;
   transition: all 0.4s ease-in-out;
@@ -296,6 +296,7 @@ header {
 @media (min-width: 56.25em) {
   .header-content .left-header .image {
     margin-left: 4rem;
+    width: 68%;
   }
 }
 .header-content .left-header .image img {
@@ -687,6 +688,19 @@ section {
   .controls {
     top: 50%;
     left: 92%;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-50%);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: inherit;
+  }
+}
+@media (min-width: 43.75em) and (max-width: 56.24875em) {
+  .controls {
+    top: 50%;
+    left: 90%;
     flex-direction: column;
     align-items: center;
     transform: translateY(-50%);

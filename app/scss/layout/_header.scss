@@ -42,12 +42,13 @@ header{
  .image{
    border-radius: var(--br-sm-2);
    height:90%;
-   width: 68%;
+   width: 90%;
    background-color: var(--color-black);
   margin-inline: auto;
   transition: all .4s ease-in-out;
   @include u.breakpoint(large){
     margin-left: 4rem;
+    width: 68%;
   }
 
  img{

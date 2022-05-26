@@ -1,12 +1,5 @@
 @use '../util/' as u;
-a:visited,
-a,
-a:active {
-  display: inline-block;
-  text-decoration: none;
-  font-family: inherit;
-  color: inherit;
-}
+
 h1,
 h2,
 h3,
@@ -16,7 +9,8 @@ h6,p{
     font-weight: 400;
 }
 h1{
-  font-size: clamp(u.rem(18), u.rem(16) + 2vw, u.rem(30));
+  font-size: clamp(u.rem(28), u.rem(16) + 20vw, u.rem(36));
+  font-weight: 600;
   span { 
     text-transform: uppercase;
     color: var(--color-secondary);
@@ -31,7 +25,8 @@ h1{
   
 }
 p {
-  margin: 2rem 0;
+  margin-top: 0;
+  font-size:clamp(u.rem(16), u.rem(16) + 2vw, u.rem(18));
  
 }
 

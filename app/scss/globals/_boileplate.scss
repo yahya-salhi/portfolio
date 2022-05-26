@@ -7,6 +7,7 @@
 
 html{
   box-sizing: border-box;
+  font-size: 100%;
 }
 /* Box sizing */
 *,
@@ -34,7 +35,14 @@ textarea,
 select {
   font: inherit;
 }
-
+a:visited,
+a,
+a:active {
+  display: inline-block;
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
 body {
   background-color: var(--color-primary);
   color: var(--color-white);
